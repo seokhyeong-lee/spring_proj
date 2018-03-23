@@ -36,10 +36,4 @@ public class HomeController {
 		return "home";
 	}
 	
-	/** Spring Restful Controller. */
-	public void test() {
-		
-	}
-	
-	
 }
