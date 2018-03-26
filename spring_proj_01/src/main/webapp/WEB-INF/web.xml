@@ -1,7 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- web.xml : 웹 애플리케이션의 실행 환경에 관련된 각종 설정 정보가 담겨있는 파일. 
 					브라우저 요청을 가장 먼저 처리. (이곳에 필터가 있을 경우, 가장 먼저 반응하여 특정 작업 처리. 대표적으로 인코딩 작업)-->
-
-<?xml version="1.0" encoding="UTF-8"?>
 
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
