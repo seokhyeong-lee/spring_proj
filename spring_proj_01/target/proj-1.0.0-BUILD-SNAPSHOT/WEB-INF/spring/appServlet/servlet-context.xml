@@ -10,6 +10,9 @@
 	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
 	
 	<!-- Enables the Spring MVC @Controller programming model -->
+	<!-- annotation-driven 설정을 통해 URL 매핑이 발생. 
+			즉, @RequestMapping을 사용할 수 있고, @RequestMapping에 지정된 URL로 브라우저의 요청 URL이 매핑됨. 
+				<annotatioin-driven />는 RequestMappingHandlerMapping과 RequestMappingHandlerAdapter, ExceptionHandlerExceptionResolver로 구성되어 있음. -->
 	<annotation-driven />
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
@@ -21,6 +24,8 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<!-- component-scan : @Controller, @Repository, @Service, @Component 어노테이션이 사용된 클래스를 자동으로 스캔하여 빈으로 등록. 
+			지정된 패키지(ex. com.alticast.proj) 아래에서 어노테이션이 사용된 클래스를 찾아서 빈으로 등록한다. -->
 	<context:component-scan base-package="com.alticast.proj" />
 	
 	
