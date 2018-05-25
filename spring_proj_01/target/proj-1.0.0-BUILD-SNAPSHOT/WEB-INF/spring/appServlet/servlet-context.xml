@@ -19,6 +19,7 @@
 	<resources mapping="/resources/**" location="/resources/" />
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+	<!-- View 구동 과정 : 요청 -> web.xml -> servlet-context.xml -> AController.java -> servlet-context.xml -> A.jsp -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
@@ -27,7 +28,5 @@
 	<!-- component-scan : @Controller, @Repository, @Service, @Component 어노테이션이 사용된 클래스를 자동으로 스캔하여 빈으로 등록. 
 			지정된 패키지(ex. com.alticast.proj) 아래에서 어노테이션이 사용된 클래스를 찾아서 빈으로 등록한다. -->
 	<context:component-scan base-package="com.alticast.proj" />
-	
-	
 	
 </beans:beans>
