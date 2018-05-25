@@ -31,5 +31,11 @@ dependencies {
 	compile('org.apache.tomcat.embed:tomcat-embed-jasper')
 	compile('javax.servlet:jstl')
 	
+	// JPA.
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	
+	// HSQLDB (테스트용 파일 DB : Member)
+	runtime('org.hsqldb:hsqldb')
+	
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
